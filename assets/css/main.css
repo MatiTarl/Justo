@@ -1501,13 +1501,11 @@ p {
   display: none;
 }
 
-
-
 .Carrusel {
   width: 100%;
   background-color: #dcdcdc;
 }
-.CarruselTXT h1{
+.CarruselTXT h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -1585,18 +1583,109 @@ p {
   margin-bottom: 15px;
   color: #000000;
 }
+.func-section .func-content h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000000;
+}
 .hero-section2 {
   background-color: #ddcdfc;
 }
 .hero-section3 {
   background-color: #ddcdfc;
 }
-
-.content h3{
+.func-section {
+  background-color: #fff;
+}
+.content h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
+/* -----------------------Section Nuestras Funcionalidades------------------------ */
+.header-div-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+@media (min-width: 470px) {
+  .header-div-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 770px) {
+  .header-div-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .header-div-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.header-card {
+  background-color: white;
+  border: 0 transparent;
+  border-radius: 30px;
+  transition: transform 0.2s ease-in;
+  box-shadow: 0 0 20px rgba(143, 143, 143, 0.15);
+}
+.card-funciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  text-decoration: none;
+}
+.div-img-func{
+  width: 100%;
+  padding-top: 66%;
+  position: relative;
+  overflow: hidden;
+}
+.func-img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+}
+.div-content-func{
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 3rem;
+  display: flex;
+}
+.div-content-func-2 h3{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: block;
+  unicode-bidi: isolate;
+}
+.content-func-text{
+  margin-bottom: .5rem;
+}
+.content-func-text-2{
+ font-size: 1rem;
+ color: #5f5f64;
+}
+
+/* -----------------------Section Nuestras Funcionalidades end------------------------ */
 .imgOfert {
   transform: rotate(45deg);
   width: 80%;
