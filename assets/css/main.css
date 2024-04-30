@@ -1717,7 +1717,6 @@ p {
   }
 }
 .prop-image {
-
 }
 .header36_image{
   object-fit: cover;
@@ -1727,6 +1726,7 @@ p {
 }
 @media (max-width: 420px) {
   .header36_image{
+    
     height: auto;
     max-height: none;
   }
@@ -1766,6 +1766,88 @@ p {
 
 
 /* -----------------------Section Porque deberias tener tu propio ecomerce end------------------------ */
+/* -----------------------Section No esperen mas------------------------ */
+.crec-header {
+  background-image: radial-gradient(circle farthest-corner at 100% 100%,#ddcdfc,#d3fedf 52%,#e5ecff);
+  margin-bottom: -10%;
+  padding-bottom: 10%;
+}
+.div-content-crec {
+  border-bottom: 0 #000;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.div-content-2-crec{
+  width: 100%;
+  max-width: 55rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-content-3-crec{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.div-content-text{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.content-div{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.content-div-2{
+  color: #000;
+  font-weight: 600;
+}
+.content-h1{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.content-h1-2{
+  color: #1a1a1a;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  line-height: 75px;
+}
+.content-h1-2 h1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.content-p{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  margin-bottom: 20px;
+}
+.content-button-2{
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+.content-button{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.button-10 {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 0 transparent;
+  border-radius: 100px;
+  flex: 0 auto;
+  padding: 1rem 2rem;
+}
+/* -----------------------Section No esperen mas end------------------------ */
 .imgOfert {
   transform: rotate(45deg);
   width: 80%;
