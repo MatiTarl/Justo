@@ -135,6 +135,7 @@ p {
   font-weight: 400;
   line-height: 27px;
   margin: 0px;
+  color:  #1a1a1a;
 }
 
 .img-bg {
@@ -1677,9 +1678,10 @@ p {
   display: flex;
 }
 .div-content-ventas-2 {
-  display: block;
-  unicode-bidi: isolate;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  unicode-bidi: isolate;
   text-align: center;
 }
 .div-content-ventas-2 h3{
@@ -1697,6 +1699,9 @@ p {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+.div-button-ventas {
+  bottom: 0;
 }
 .button-ventas {
   background-color: #1a1a1a;
@@ -2129,7 +2134,7 @@ p {
 }
 
 .about-section .about-content .counter-up {
-  background: #e8505b;
+  background: #000000;
   border-radius: 5px;
   display: flex;
   align-items: center;
