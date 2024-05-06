@@ -1490,7 +1490,6 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 90px;
   z-index: 1;
 }
 .hero-section h1 {
@@ -1527,25 +1526,25 @@ p {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero-section {
-    padding-top: 150px;
+    padding-top: 50px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-section {
-    padding-top: 160px;
+    padding-top: 60px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-section {
-    padding-top: 160px;
+    padding-top: 60px;
   }
 }
 
 @media (max-width: 767px) {
   .hero-section {
-    padding-top: 160px;
+    padding-top: 60px;
   }
 }
 
