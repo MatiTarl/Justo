@@ -1527,10 +1527,6 @@ p {
             transform: translateX(calc(-250px * 7));
   }
 }
-.Carrusel {
-  width: 100%;
-  background-color: #dcdcdc;
-}
 .Carrusel-track h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
@@ -1540,10 +1536,13 @@ p {
   padding-bottom: 3rem;
   color: #5f5f64;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
+@media (min-width: 350px) {
+  .Carrusel-track h1 {
+    font-size: 40px;
+  }
+}
+
 .Carrusel {
   background: white;
   /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
@@ -1551,7 +1550,8 @@ p {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 95%;
+  width: 98%;
+  margin-bottom: 1rem;
 }
 .Carrusel::before, .Carrusel::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -1578,6 +1578,9 @@ p {
   width: calc(250px * 14);
 }
 .Carrusel .slide {
+  align-items: center;
+  height: 100px;
+  width: 700px;
 }
 
 /* ----------------Carrusel Section End ---------- */
