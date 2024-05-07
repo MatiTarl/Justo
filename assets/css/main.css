@@ -130,6 +130,12 @@ ol {
   list-style-type: none;
 }
 
+@media (min-width: 767px ){
+  ul {
+    align-items: center;
+  }
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
@@ -1187,7 +1193,15 @@ p {
   transition: all 0.3s ease-out 0s;
   padding: 20px 0;
 }
-
+.button-navbar{
+  color: #fff;
+  background-color: #1a1a1a;
+  border: 0 transparent;
+  border-radius: 100px;
+  flex: 0 auto;
+  padding: 1rem 2rem;
+  transition: transform .2s ease-in-out,background-color .3s;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar {
     padding: 17px 0;
@@ -1202,12 +1216,32 @@ p {
 
 .navbar-brand {
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.navbar-brand h5 {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
 .navbar-brand img {
-  max-width: 180px;
+  max-width: 35px;
 }
-
+@media (min-width: 450px) {
+  .navbar-brand img {
+    max-width: 40px;
+  }
+  .navbar-brand h5 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 765px) {
+  .navbar-brand img {
+    max-width: 60px;
+  }
+}
 .navbar-toggler {
   padding: 0;
 }
@@ -1274,6 +1308,7 @@ p {
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 40px;
+  
 }
 
 @media (max-width: 767px) {
