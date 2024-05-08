@@ -1696,6 +1696,40 @@ p {
     font-size: 60px;
   }
 }
+.hero-content3-1 p{
+  text-align: center;
+}
+@media (min-width: 470px) {
+  .hero-content3-1 p{
+    text-align: end;
+  }
+}
+.hero-content3-2 p{
+  text-align: center;
+}
+@media (min-width: 470px) {
+  .hero-content3-2 p{
+    text-align: start;
+  }
+}
+.img-log {
+  margin-left: 3.5%;
+}
+@media (min-width: 470px) {
+  .img-log {
+    margin-left: 0%;
+  }
+}
+.img-mark {
+  margin-left: 3.5%;
+  border-top: 3px solid #96a9ff;
+}
+@media (min-width: 470px) {
+  .img-mark {
+    margin-left: 0%;
+    border-top: 3px solid #96a9ff;
+  }
+}
 .func-section .func-content h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
