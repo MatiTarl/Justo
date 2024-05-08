@@ -1691,6 +1691,11 @@ p {
   margin-bottom: 15px;
   color: #000000;
 }
+.div-info-mark-log {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 @media (min-width: 470px) {
   .hero-section3 .hero-content3 h1 {
     font-size: 60px;
@@ -1698,18 +1703,26 @@ p {
 }
 .hero-content3-1 p{
   text-align: center;
+  display: block;
+  justify-content: center;
+  margin-left: 3.5%;
 }
 @media (min-width: 470px) {
   .hero-content3-1 p{
+    margin-left: 0%;
     text-align: end;
   }
 }
 .hero-content3-2 p{
   text-align: center;
+  display: block;
+  justify-content: center;
+  margin-left: 3.5%;
 }
 @media (min-width: 470px) {
   .hero-content3-2 p{
     text-align: start;
+    margin-left: 0%;
   }
 }
 .img-log {
