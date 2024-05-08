@@ -1570,7 +1570,7 @@ p {
   padding: 1.2rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5f5f64;
+  color: #7663ce;
   width: 100%;
 }
 @media (min-width: 350px) {
@@ -1594,8 +1594,14 @@ p {
   content: "";
   height: 100px;
   position: absolute;
-  width: 200px;
+  width: 100px;
   z-index: 2;
+}
+
+@media (min-width: 450px){
+  .Carrusel::before, .Carrusel::after {
+    width: 200px;
+  }
 }
 .Carrusel::after {
   right: 0;
@@ -1957,7 +1963,7 @@ p {
 /* -----------------------Section Porque deberias tener tu propio ecomerce end------------------------ */
 /* -----------------------Section No esperen mas------------------------ */
 .crec-header {
-  background-image: radial-gradient(circle farthest-corner at 100% 100%,#ddcdfc,#d3fedf 52%,#e5ecff);
+  background-image: radial-gradient(circle farthest-corner at 100% 100%,#e5ecff,#ddcdfc 52%,#e5ecff);
   margin-bottom: -10%;
   padding-bottom: 10%;
 }
