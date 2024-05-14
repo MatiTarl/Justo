@@ -1680,8 +1680,11 @@ p {
   padding: 15% 10%;
 }
 .content-img-top {
-  display: block;
   unicode-bidi: isolate;
+  display: flex;
+  align-items: center;
+  color: var(--negro);
+  font-weight: 700;
 }
 .img-grid-1 {
   max-width: 25%;
@@ -2017,12 +2020,12 @@ p {
 }
 .img-mark {
   margin-left: 3.5%;
-  border-top: 3px solid #96a9ff;
+  border-top: 3px solid  var(--morado-oscuro);
 }
 @media (min-width: 470px) {
   .img-mark {
     margin-left: 0%;
-    border-top: 3px solid #96a9ff;
+    border-top: 3px solid var(--morado-oscuro);
   }
 }
 .func-section .func-content h1 {
@@ -2642,9 +2645,18 @@ p {
     margin-bottom: 25px;
   }
 }
-
+.div-delivery-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .delivery-img img {
-  width: 100%;
+  width: 50%;
+}
+.delivery-img{
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .testimonial-section .testimonial-wrapper {
