@@ -2634,9 +2634,20 @@ p {
   color: #fff;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
   .delivery-img {
     margin-bottom: 25px;
+    max-width: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .delivery-img {
+    max-width: 550px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  .div-delivery-img {
+    flex-direction: column;
   }
 }
 
@@ -2651,14 +2662,16 @@ p {
   align-items: center;
 }
 .delivery-img img {
-  width: 50%;
+  max-width: 50%;
 }
 .delivery-img{
   align-items: center;
   display: flex;
   justify-content: center;
 }
-
+.layout219_image{
+  max-width: 50%;
+}
 .testimonial-section .testimonial-wrapper {
   margin-top: 60px;
 }
