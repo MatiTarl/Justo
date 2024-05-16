@@ -1318,7 +1318,8 @@ p {
     top: 100%;
     left: 0;
     border-radius: 20px;
-    width: 40%;
+    min-width: 60%;
+    width: auto;
     margin-top: 1.2rem;
     background-color: #fff;
     z-index: 9;
@@ -1329,14 +1330,22 @@ p {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 40px;
 }
-
+.navbar-nav {
+  display: flex;
+  flex: auto;
+  justify-content: space-evenly;
+  }
 @media (max-width: 767px) {
   .navbar-nav .nav-item {
     position: relative;
     margin-left: 0%;
   }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 }
 
 .navbar-nav .nav-item a {
@@ -1346,12 +1355,12 @@ p {
   transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .nav-item a {
     display: inline-block;
-    margin-left: 5%;
     color: #676f73;
   }
 }
@@ -1359,7 +1368,6 @@ p {
 @media (max-width: 767px) {
   .navbar-nav .nav-item a {
     display: inline-block;
-    margin-left: 5%;
     color: #676f73;
   }
 }
@@ -1399,6 +1407,7 @@ p {
     height: 100%;
     width: 0;
     border-radius: 0;
+    
   }
 }
 
