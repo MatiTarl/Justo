@@ -2670,6 +2670,10 @@ p {
   justify-content: center;
   align-items: center;
 }
+.div-widget {
+  min-width: 200px;
+  min-height: 200px;
+}
 .delivery-img img {
   max-width: 50%;
 }
