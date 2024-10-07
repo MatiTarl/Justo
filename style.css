@@ -1,0 +1,23 @@
+.img {
+    width: 900px; /* Ajusta el ancho a tu preferencia */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 120%;
+  }
+  
+
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* Ajusta el padding para que no haya mucho espacio arriba o abajo */
+  }
+  
+  .hero-content h1, 
+  .hero-content p {
+    margin-bottom: 10px; /* Espacio ajustado entre el título y el párrafo */
+  }
+  
+  .hero-content a {
+    margin-top: 20px; /* Un poco más de espacio sobre el botón */
+  }
+  
