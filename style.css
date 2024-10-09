@@ -32,3 +32,20 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.button-navbar {
+  display: inline-block; 
+  padding: 10px 20px;
+  color: white !important; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer;
+  text-align: center; 
+  min-width: 150px; 
+  width: auto;
+}
+
+.button-navbar:hover {
+  background-color: #7d00b3; 
+  color: white;
+}
