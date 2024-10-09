@@ -1,6 +1,6 @@
 .img {
-    width: 900px; /* Ajusta el ancho a tu preferencia */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 900px;
+    height: auto;
     max-width: 120%;
   }
   
@@ -9,15 +9,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0; /* Ajusta el padding para que no haya mucho espacio arriba o abajo */
+    padding: 50px 0;
   }
   
   .hero-content h1, 
   .hero-content p {
-    margin-bottom: 10px; /* Espacio ajustado entre el título y el párrafo */
+    margin-bottom: 10px;
   }
   
   .hero-content a {
-    margin-top: 20px; /* Un poco más de espacio sobre el botón */
+    margin-top: 20px;
   }
   
+
+  .rounded-img {
+    border-radius: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); 
+    width: 900px;
+    height: auto; 
+    max-width: 120%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
