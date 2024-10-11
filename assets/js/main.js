@@ -6,6 +6,16 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
+function openModal2() {
+    document.getElementById("myModal2").style.display = "flex";
+}
+
+function closeModal2() {
+    document.getElementById("myModal2").style.display = "none";
+}
+
+
+
 function redirectToWhatsApp() {
     closeModal(); // Cierra el modal
     window.open("https://wa.me/56930835236?text=Hola,%20estoy%20interesado%20en%20el%20plan%20de%20ventas", "_blank");
