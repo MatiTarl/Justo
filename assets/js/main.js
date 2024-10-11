@@ -1,79 +1,70 @@
+function openModal() {
+    document.getElementById("myModal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+function redirectToWhatsApp() {
+    closeModal(); // Cierra el modal
+    window.open("https://wa.me/56930835236?text=Hola,%20estoy%20interesado%20en%20el%20plan%20de%20ventas", "_blank");
+}
 
 (function() {
-//===== Prealoder
-
-	window.onload = function () {
-		window.setTimeout(fadeout, 500);
-	}
-
-	function fadeout() {
-		document.querySelector('.preloader').style.opacity = '0';
-		document.querySelector('.preloader').style.display = 'none';
-	}
-
-
-    /*=====================================
-    Sticky
-    ======================================= */
-    window.onscroll = function () {
-        var header_navbar = document.querySelector(".navbar-area");
-        var sticky = header_navbar.offsetTop;
-
-        if (window.pageYOffset > sticky) {
-            header_navbar.classList.add("sticky");
-        } else {
-            header_navbar.classList.remove("sticky");
-        }
-
-
-
-        // show or hide the back-top-top button
-        var backToTo = document.querySelector(".scroll-top");
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            backToTo.style.display = "flex";
-        } else {
-            backToTo.style.display = "none";
-        }
+    //===== Preloader
+    window.onload = function () {
+        setTimeout(fadeout, 500);
     };
 
-    // Get the navbar
+    function fadeout() {
+        const preloader = document.querySelector('.preloader');
+        preloader.style.opacity = '0';
+        preloader.style.display = 'none';
+    }
 
+    // Sticky Navbar and Back to Top Button
+    const headerNavbar = document.querySelector(".navbar-area");
+    const backToTop = document.querySelector(".scroll-top");
 
-    // for menu scroll 
-    var pageLink = document.querySelectorAll('.page-scroll');
-    
-    pageLink.forEach(elem => {
-        elem.addEventListener('click', e => {
+    window.onscroll = function () {
+        const sticky = headerNavbar.offsetTop;
+        headerNavbar.classList.toggle("sticky", window.pageYOffset > sticky);
+        backToTop.style.display = (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) ? "flex" : "none";
+    };
+
+    // Smooth Scroll for Navbar Links
+    const pageLinks = document.querySelectorAll('.page-scroll');
+    pageLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
-            document.querySelector(elem.getAttribute('href')).scrollIntoView({
+            document.querySelector(link.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth',
-                offsetTop: 1 - 60,
+                block: 'start' // Cambiado para tener más control sobre el desplazamiento
             });
         });
     });
 
+    // Close Navbar Collapse on Link Click
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
 
-    //===== close navbar-collapse when a  clicked
-    let navbarToggler = document.querySelector(".navbar-toggler");    
-    var navbarCollapse = document.querySelector(".navbar-collapse");
-
-    document.querySelectorAll(".page-scroll").forEach(e =>
-        e.addEventListener("click", () => {
+    pageLinks.forEach(link => {
+        link.addEventListener("click", () => {
             navbarToggler.classList.remove("active");
-            navbarCollapse.classList.remove('show')
-        })
-    );
-    navbarToggler.addEventListener('click', function() {
+            navbarCollapse.classList.remove('show');
+        });
+    });
+
+    navbarToggler.addEventListener('click', () => {
         navbarToggler.classList.toggle("active");
-    }) 
+    });
 
-
-	// WOW active
+    // WOW.js Initialization
     new WOW().init();
 
-    
-    //====== counter up 
-    var cu = new counterUp({
+    // Counter Up Initialization
+    const cu = new counterUp({
         start: 0,
         duration: 2000,
         intvalues: true,
@@ -81,5 +72,4 @@
         append: " ",
     });
     cu.start();
-
 })();
