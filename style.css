@@ -104,10 +104,64 @@
 }
 
 .div-button-ventas {
-  margin-top: auto; 
+  display: flex;
+  justify-content: space-between; /* Alinea los botones uno al lado del otro */
+  margin-top: auto; /* Empuja los botones hacia la parte inferior de la tarjeta */
+  gap: 10px; /* Añade un espacio entre los botones */
   text-align: center;
-  cursor: pointer;
 }
+
+
+.lorem-content .fa-check-circle {
+  color: #38a33c; /* Color del ícono */
+  margin-right: 3px; /* Espacio entre el ícono y el texto */
+  font-size: 1em; /* Tamaño del ícono */
+}
+
+.button-ventas {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff; /* Cambia el color según tu diseño */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-ventas:hover {
+  background-color: #0056b3; /* Color para el hover */
+}
+
+.whatsapp-widget {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-widget:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-widget img {
+  width: 30px; /* Ajusta el tamaño exacto del ícono */
+  height: 30px;
+  object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}
+
 
 .modal {
   display: none;
