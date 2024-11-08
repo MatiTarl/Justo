@@ -1,16 +1,3 @@
-function openModal() {
-    document.getElementById("myModal").style.display = "flex";
-}
-
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-}
-
-function redirectToLink() {
-    closeModal(); // Cierra el modal
-    window.open("https://gamma.app/docs/Chile-Toma-el-control-de-tu-negocio-con-tu-propia-App-de-Entregas-m3jbtyukifdxeu5?mode=doc", "_blank");
-}
-
 (function() {
     //===== Preloader
     window.onload = function () {
