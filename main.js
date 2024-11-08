@@ -16,9 +16,9 @@ function closeModal2() {
 
 
 
-function redirectToWhatsApp() {
+function redirectToLink() {
     closeModal(); // Cierra el modal
-    window.open("https://gamma.app/docs/Chile-Toma-el-control-de-tu-negocio-con-tu-propia-App-de-Entregas-m3jbtyukifdxeu5?mode=doc?text=Hola,%20estoy%20interesado%20en%20el%20plan%20de%20ventas", "_blank");
+    window.open("https://gamma.app/docs/Chile-Toma-el-control-de-tu-negocio-con-tu-propia-App-de-Entregas-m3jbtyukifdxeu5?mode=doc", "_blank");
 }
 
 (function() {
