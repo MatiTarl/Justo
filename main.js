@@ -6,15 +6,14 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
-function openModal2() {
+/* function openModal2() {
     document.getElementById("myModal2").style.display = "flex";
 }
 
 function closeModal2() {
     document.getElementById("myModal2").style.display = "none";
 }
-
-
+ */
 
 function redirectToLink() {
     closeModal(); // Cierra el modal
