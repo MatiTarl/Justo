@@ -356,3 +356,28 @@
   opacity: 0.5;
   cursor: default;
 }
+
+.header-div-card {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.header-card {
+  width: 100%;
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+@media (max-width: 767px) {
+  .header-div-card {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .header-card {
+    width: 90%; 
+    max-width: none; 
+  }
+}
